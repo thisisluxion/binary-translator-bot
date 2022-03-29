@@ -19,7 +19,7 @@ def converter(client,inline_query):
         inline_query.answer(
             results=[
                 InlineQueryResultArticle(
-                    title="Binary to text",
+                    title=text,
                     input_message_content=InputTextMessageContent(
                         text
                     )
@@ -33,7 +33,7 @@ def converter(client,inline_query):
         inline_query.answer(
             results=[
                 InlineQueryResultArticle(
-                    title="Text to binary",
+                    title=text,
                     input_message_content=InputTextMessageContent(
                         text
                     )
